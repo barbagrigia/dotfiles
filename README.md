@@ -9,3 +9,12 @@ npm install eslint babel-eslint eslint-config-airbnb eslint-plugin-flowtype esli
 ```
 ## Atom StyleSheet
 My Atom StyleSheet includes box borders to identify nested folders was better. It uses [Fira Code](https://github.com/tonsky/FiraCode) as font with single progamming ligatures.
+
+## Resources
+
+- [GitHub ❤ ~/](http://dotfiles.github.com/)
+- [Mathias’s dotfiles](https://github.com/mathiasbynens/dotfiles)
+
+## License
+
+The code is available under the [MIT license](LICENSE).
