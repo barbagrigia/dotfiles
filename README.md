@@ -2,7 +2,7 @@
 Set of some important, private and common used dotfiles
 
 ## Prettier + ESLint
-I am using the prettier-eslint (Atom) plugin to automatically format/fix my code.
+I am using the [prettier-atom](https://github.com/jlongster/prettier-atom) Atom plugin to automatically format/fix my code.
 
 ```sh
 npm install eslint babel-eslint eslint-config-airbnb eslint-plugin-flowtype eslint-plugin-import eslint-plugin-jsx-a11y eslint-plugin-react
