@@ -1,0 +1,79 @@
+/*
+ * Your Stylesheet
+ *
+ * This stylesheet is loaded when Atom starts up and is reloaded automatically
+ * when it is changed.
+ *
+ * If you are unfamiliar with LESS, you can read more about it here:
+ * http://www.lesscss.org
+ */
+atom-text-editor { text-rendering:optimizeLegibility }
+//atom-text-editor::shadow .string.quoted,
+//atom-text-editor::shadow .string.regexp {
+atom-text-editor.editor .syntax--string.syntax--quoted,
+atom-text-editor.editor .syntax--string.syntax--regexp{
+  -webkit-font-feature-settings: "liga" off, "calt" off;
+}
+ @font-size: 11px;
+ html, body, .tree-view, .tab-bar .tab {
+   font-size: @font-size;
+   font-family: 'FiraCode-Retina';
+ }
+
+.tree-view {
+  // background-color: whitesmoke;
+  padding: 0;
+  li.project-root {
+    border-bottom: 1px solid gray;
+    padding: 10px 0 10px 10px !important;
+    &.selected:before, &.selected {
+      background: rgb(25, 25, 25);
+    }
+  }
+  ol {
+    &:last-child{
+      border-bottom : 0;
+    }
+  }
+  ol li {
+    padding-left: 0px !important;
+    &.selected {
+      color: rgb(203, 177, 74) !important;
+      &:before {
+        background: rgba(255, 0, 0, 0.3) !important;
+      }
+    }
+
+    &.list-item.status-modified {
+      color: rgb(255, 101, 96) !important;
+    }
+
+    &.list-item.status-added {
+      color: white;
+      background: rgba(0, 255, 0, 0.2) !important;
+    }
+
+    li {
+      padding-left: 10px !important;
+    }
+    ol {
+      border-bottom: 2px solid rgba(120, 120, 120, 0.4) !important;
+      border-left: 1px solid rgba(120, 120, 120, 0.4);
+    }
+  }
+}
+
+// style the background and foreground colors on the atom-text-editor-element
+// itself
+atom-text-editor {
+  // color: white;
+  // background-color: hsl(180, 24%, 12%);
+  background: rgb(21, 36, 42);
+  font-size: 14px
+}
+
+// To style other content in the text editor's shadow DOM, use the ::shadow
+// expression
+atom-text-editor::shadow .cursor {
+  // border-color: red;
+}
